@@ -97,7 +97,87 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+html {
+  box-sizing: bord;
+}
 
+*,*:before,*.after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+div.hero {
+  background-image: url(../img/encabezado.jpg);
+  height: 100vh;
+  background-position: top center;
+  background-size: cover;  
+}
+
+div.contenido-header {
+  padding-top: 40px;  
+}
+
+@media only screen and (min-width: 768px) {
+  div.contenido-header {
+    padding-top: 10px;  
+  }
+}
+
+nav.redes-sociales {
+  text-align: center;
+}
+
+nav.redes-sociales a {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-right: 20px;
+}
+
+nav.redes-sociales a:last-child {
+  margin-right: 0;
+}
+
+div.informacion-evento {
+  text-align: center;
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 768px) {
+  div.informacion-evento {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+}
+
+div.informacion-evento p {
+  margin: 0;
+  display: inline;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+div.informacion-evento p i{
+  color:#fe4918;
+}
+
+p.fecha {
+  float: left;
+}
+p.ciudad {
+  float: right;
+  text-align: right;
+}
+
+
+
+
+
+
+/* https://careers.sky.com/earlycareers/software-engineering/#toggle-id-3 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
