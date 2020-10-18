@@ -161,6 +161,41 @@ h2::after {
   display: block;
 }
 
+h3 {
+  font-size: 1.8em;
+  color: #fe4918;
+  font-family: 'PT Sans', sans-serif;
+  margin: 0;
+}
+
+.button{
+  background-color: #fe4918;
+  padding: 10px 40px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+  font-size: 1em;
+  margin-top: 20px;
+  display: inline-block;
+  transition: all .3s ease;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.button:hover{
+  background-color: #e33000;
+}
+
+.float-right{
+  float: right;
+}
+
 div.hero {
   background-image: url(../img/encabezado.jpg);
   height: 100vh;
@@ -401,7 +436,8 @@ nav.menu-programa a {
   }
 }
 
-nav.menu-programa a i{
+nav.menu-programa a i,
+div.detalle-evento p i{
   color: #fe4918;
   font-size: 1.6em;
   margin-right: 10px;
@@ -414,9 +450,42 @@ div.detalle-evento{
   padding: 0 20px;
 }
 
-div.detalle-evento :last-of-type() {
-  border-bottom: none;
+div.detalle-evento:nth-child(2){
+  border: none;
 }
+
+div.detalle-evento p {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+/*Invitados*/
+ul.lista-invitados li {
+  padding: 10px;
+  float: left;
+}
+
+@media only screen and (min-width:480px) {
+  ul.lista-invitados li {
+    width: 50%;    
+  }
+}
+@media only screen and (min-width:768px) {
+  ul.lista-invitados li {
+    width: 33.3%;    
+  }
+}
+
+div.invitado {
+  position: relative;
+  overflow: hidden;
+}
+
+div.invitado img {
+  max-width: 100%;
+}
+
+
 
 
 /* https://careers.sky.com/earlycareers/software-engineering/#toggle-id-3 
