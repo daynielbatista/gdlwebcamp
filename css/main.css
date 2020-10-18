@@ -340,16 +340,16 @@ div.menu-movil span {
 
 /**Talleres**/
 
-seccion.programa {
+section.programa {
   position: relative;
 }
 div.contenedor-video {
   max-width: 100%;
   overflow-x: hidden;
 }
-div.contenedor-video video {
+/*div.contenedor-video video {
   width: 100%;
-}
+}*/
 div.contenido-programa { /*Por aqui esta el problema*/
   position: absolute;
   top: 0;
@@ -361,7 +361,7 @@ div.contenido-programa { /*Por aqui esta el problema*/
 div.programa-evento {
   background-color: rgba(255, 255, 255, .8);
   padding: 15px;
-  margin-top: 80%;
+  margin-top: 80px;
 }
 @media only screen and (min-width: 768px) {
   div.programa-evento {
