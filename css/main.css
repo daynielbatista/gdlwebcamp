@@ -480,7 +480,7 @@ ul.lista-invitados li {
 div.invitado {
  position: relative;
  overflow: hidden;/*Hasta aqui las imagenes se deberian cortar.*/
-}/*
+}
 
 div.invitado img {
   max-width: 100%;
@@ -513,7 +513,35 @@ div.invitado p {
 div.invitado:hover p {
   bottom: -80px;
   opacity: 0;
-}*/
+}
+
+/**Contador **/
+
+.parallax::before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+div.contador {
+  position: relative;
+  height: auto;
+}
+
+div.contador::before {
+  background-image: url(../img/bg-resumen.jpg);
+  content: '';
+}
+
+ul.resumen-evento {
+  position: relative;
+  padding: 120px 0;
+}
 
 /* https://careers.sky.com/earlycareers/software-engineering/#toggle-id-3 
 /* ==========================================================================
