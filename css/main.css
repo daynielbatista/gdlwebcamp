@@ -568,6 +568,20 @@ p.numero {
   margin: 0 0 10px 0;
 }
 
+/**Tabla de precios**/
+
+ul.lista-precios > li {
+  padding: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  ul.lista-precios > li {
+    float: left;
+    width: 33.3%;
+    padding: 0; /*Este padding no esta en el curso. Investiga por que el padding principlal esta asi*/
+  }
+}
+
 
 /* https://careers.sky.com/earlycareers/software-engineering/#toggle-id-3 
 /* ==========================================================================
