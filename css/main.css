@@ -526,6 +526,9 @@ div.invitado:hover p {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  background-attachment: fixed;
+  -webkit-filter: brightness(.8);
+  filter: brightness(.8);
 }
 
 div.contador {
@@ -542,6 +545,29 @@ ul.resumen-evento {
   position: relative;
   padding: 120px 0;
 }
+ul.resumen-evento li {
+  width: 50%;
+  float: left;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+  ul.resumen-evento li {
+    width: 25%;  
+  }
+}
+
+p.numero {
+  color: #fe4918;
+  font-size: 4em;
+  display: block;
+  margin: 0 0 10px 0;
+}
+
 
 /* https://careers.sky.com/earlycareers/software-engineering/#toggle-id-3 
 /* ==========================================================================
