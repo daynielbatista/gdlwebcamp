@@ -443,7 +443,7 @@ div.detalle-evento p i{
   margin-right: 10px;
 }
 
-/*Detalle Evento*/
+/**Detalle Evento*/
 div.detalle-evento{
   margin-top: 20px;
   border-bottom: 1px solid black;
@@ -459,10 +459,11 @@ div.detalle-evento p {
   font-size: 20px;
 }
 
-/*Invitados**/ 
+/**Invitados**/ 
 ul.lista-invitados li {
   padding: 10px;
   float: left;
+  
 }
 
 @media only screen and (min-width:480px) {
@@ -485,11 +486,13 @@ div.invitado {
 div.invitado img {
   max-width: 100%;
   filter:gray;
+  transition: all .5s ease-in-out;
   -webkit-filter: grayscale(1);
-  -webkit-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;  
 }
 
 div.invitado:hover img {
+  filter: grayscale(0);
   -webkit-filter: grayscale(0);
   -webkit-transform: scale(1.1);
   transform: rotate(3deg);
@@ -507,6 +510,7 @@ div.invitado p {
   font-family: 'Oswald', sans-serif;
   color: #fe4918;
   text-transform: uppercase; 
+  transition:  all .5s ease-in-out;
   -webkit-transition: all .5s ease-in-out;
 }
 
@@ -530,17 +534,14 @@ div.invitado:hover p {
   -webkit-filter: brightness(.8);
   filter: brightness(.8);
 }
-
 div.contador {
   position: relative;
   height: auto;
 }
-
 div.contador::before {
   background-image: url(../img/bg-resumen.jpg);
   content: '';
 }
-
 ul.resumen-evento {
   position: relative;
   padding: 120px 0;
@@ -554,33 +555,72 @@ ul.resumen-evento li {
   font-family: 'Oswald', sans-serif;
   font-size: 24px;
 }
-
 @media only screen and (min-width: 768px) {
   ul.resumen-evento li {
     width: 25%;  
   }
 }
-
 p.numero {
   color: #fe4918;
   font-size: 4em;
   display: block;
   margin: 0 0 10px 0;
+  font-family: 'Oswald', sans-serif;
 }
 
 /**Tabla de precios**/
 
 ul.lista-precios > li {
-  padding: 10px;
+  padding: 0;
 }
-
 @media only screen and (min-width: 768px) {
   ul.lista-precios > li {
     float: left;
     width: 33.3%;
-    padding: 0; /*Este padding no esta en el curso. Investiga por que el padding principlal esta asi*/
+    /*padding: 0; Este padding no esta en el curso. Investiga por que el padding principlal esta asi*/
   }
 }
+
+div.tabla-precio{
+  border: 1px solid #e1e1e1;
+  background-color: #ffffff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+div.tabla-precio ul li {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #868686;
+  line-height: 26px;
+}
+
+div.tabla-precio ul li::before {
+  font-family: 'FontAwesome';
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 5px;
+  font-size: 20px;
+  color: green;
+  -webkit-font-smoothing: antialiased;
+  content: '\f00c';
+}
+
+div.tabla-precio h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+div.tabla-precio p.numero {
+  color: #000000;
+  margin: 20px 0;
+}
+
+
+
 
 
 /* https://careers.sky.com/earlycareers/software-engineering/#toggle-id-3 
