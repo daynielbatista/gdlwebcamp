@@ -180,6 +180,13 @@ h3 {
   margin-top: 20px;
   display: inline-block;
   transition: all .3s ease;
+  border: 2px solid #fe4918;
+}
+
+.button.hollow,
+.button.hollow:hover {
+  background-color: white;
+  color: #fe4918; 
 }
 
 ul {
@@ -586,6 +593,13 @@ div.tabla-precio{
   background-color: #ffffff;
   padding: 40px 0;
   text-align: center;
+  transition: all .3s ease;
+}
+
+div.tabla-precio:hover {
+  transform: scale(1.1);
+  border: 1px solid #fe4918;
+  box-shadow: 0px 0px 50px #666;
 }
 
 div.tabla-precio ul li {
@@ -619,8 +633,11 @@ div.tabla-precio p.numero {
   margin: 20px 0;
 }
 
-
-
+/**MAPA**/
+div.mapa {
+  height: 420px;
+  background-color: green;
+}
 
 
 /* https://careers.sky.com/earlycareers/software-engineering/#toggle-id-3 
