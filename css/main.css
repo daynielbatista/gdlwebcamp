@@ -192,7 +192,9 @@ h3 {
   background-color: transparent;
   border-color: 2px solid #ffffff;
 }
-
+.button.transparente:hover {
+  border: 2px solid #fe4918;
+}
 
 
 ul {
@@ -730,6 +732,7 @@ div.newsletter .contenido {
   padding: 100px 0;
   color: #ffffff;
   text-align: center;
+  position: relative;
 }
 div.newsletter .contenido p {
   font-size: 1.2em;
@@ -741,8 +744,59 @@ div.newsletter .contenido h3 {
   font-size: 7vw;
   font-family: 'PT Sans', sans-serif;
 }
+/**Cuenta Regresiva**/
+div.cuenta-regresiva ul li {
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  div.cuenta-regresiva ul li {
+    width: 25%;
+    float: left;
+  }
+}
 
-
+/**Footer**/ /*Hay problemas con el espaciado*/
+footer {
+  background-color: #353535;
+  padding-top: 40px;
+  margin-top: 20px;
+}
+footer .contenedor > div {
+  color: #ffffff;
+  padding: 0px 20px;
+  font-size: 12 px;
+}
+@media only screen and (min-width: 768px) {
+  footer .contenedor > div {
+   width: 33.3%;
+   float: left;
+  }
+}
+footer h3 {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 20px;
+}
+footer h3 span {
+  color: #fe4918;
+}
+footer .ultimos-tweets li {
+  margin-bottom: 10px;
+}
+footer nav.redes-sociales {
+  text-align: left;
+}
+p.copyright {  /*Fix white line on top of this section.*/
+  background-color: #2e2e2e;
+  color: #ffffff;
+  padding: 10px 0;
+  margin: 20px 0 0 0;
+  text-align: center;
+}
 
 /* https://careers.sky.com/earlycareers/software-engineering/#toggle-id-3 
 /* ==========================================================================
