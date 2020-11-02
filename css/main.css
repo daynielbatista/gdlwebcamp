@@ -758,7 +758,7 @@ div.cuenta-regresiva ul li {
   }
 }
 
-/**Footer**/ /*Hay problemas con el espaciado*/
+/**Footer**/ /
 footer {
   background-color: #353535;
   padding-top: 40px;
@@ -799,7 +799,7 @@ p.copyright {  /*Fix white line on top of this section.*/
 }
 
 
-/* https://careers.sky.com/earlycareers/software-engineering/#toggle-id-3 
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
