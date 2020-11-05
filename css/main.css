@@ -653,7 +653,7 @@ div.testimoniales {
 }
 
 /*div.testimonial {
- padding: 5px;      /*Esto aqui me pone un testimoniual en la linea de abajo, no deja alinearse los 3. 
+ padding: 1px;      /*Esto aqui me pone un testimoniual en la linea de abajo, no deja alinearse los 3. 
 }*/
 
 @media only screen and (min-width: 768px) {
@@ -668,6 +668,7 @@ blockquote {
   border: 1px solid #e1e1e1;
   position: relative;
   margin: 0 0 10px 0;
+  padding-bottom: 20px;
 }
 
 blockquote p {
@@ -681,7 +682,7 @@ blockquote p::before { /*pseudo-selector*/
   content: '\201c';
   position: absolute;
   left: 13px;
-  top: -6px;
+  top: 8px;
   font-size: 8rem;
   margin: 0;
   padding: 0;
@@ -691,6 +692,7 @@ blockquote p::before { /*pseudo-selector*/
 
 footer.info-testimonial {
   padding: 0;
+  background-color: transparent;
 }
 
 footer.info-testimonial img { /*Issue with images. Fix it*/
@@ -758,7 +760,7 @@ div.cuenta-regresiva ul li {
   }
 }
 
-/**Footer**/ /
+/**Footer**/
 footer {
   background-color: #353535;
   padding-top: 40px;
@@ -788,7 +790,7 @@ footer .ultimos-tweets li {
   margin-bottom: 10px;
 }
 footer nav.redes-sociales {
-  text-align: left;
+  text-align: justify;
 }
 p.copyright {  /*Fix white line on top of this section.*/
   background-color: #2e2e2e;
