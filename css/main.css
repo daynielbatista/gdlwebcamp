@@ -102,6 +102,20 @@ html {
   box-sizing: border-box;
 }
 
+/*Pedry
+//basic element style GENERAL
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+    font-family: 'DM Mono',monospace;
+    font-weight: 400;    
+}
+*/
+
 *,*:before,*.after {
   box-sizing: inherit;
 }
