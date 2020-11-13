@@ -32,11 +32,11 @@
                 alert("Debes elegir un regalo");
                 regalo.focus();                
             } else {
-                var boletosDia = pase_dia.value,
-                    boletos2Dias = pase_dosdias.value,
-                    boletoCompleto = pase_completo.value,
-                    cantCamisas = camisas.value,
-                    cantEtiquetas = etiquetas.value;
+                var boletosDia = parseInt (pase_dia.value, 10) || 0,
+                    boletos2Dias = parseInt (pase_dosdias.value, 10) || 0,
+                    boletoCompleto = parseInt (pase_completo.value, 10) || 0,
+                    cantCamisas = parseInt (camisas.value, 10) || 0,
+                    cantEtiquetas = parseInt (etiquetas.value, 10) || 0;
 
                 var totalPagar = (boletosDia * 30) + (boletos2Dias * 45) + (boletoCompleto * 50) + ((cantCamisas * 10) * .93) + (cantEtiquetas * 2);
 
