@@ -18,6 +18,7 @@
         var errorDiv = document.getElementById('error');
         var botonRegistro = document.getElementById('btnRegistro');
         var lista_productos = document.getElementById('lista-productos');
+        var suma = document.getElementById('suma-total');
 
         //Extras
         var camisas = document.getElementById('camisa_evento');
@@ -43,30 +44,33 @@
                 var listadoProductos = [];
 
                 if (boletosDia >=1) {
-                    listadoProductos.push(boletoDia + 'Pases por dia');
+                    listadoProductos.push(boletosDia + ' Pases por dia');
                 }
                 
-                if (boleto2Dias >=1) {
-                    listadoProductos.push(boletos2Dias + 'Pases por 2 dias');
+                if (boletos2Dias >=1) {
+                    listadoProductos.push(boletos2Dias + ' Pases por 2 dias');
                 }
                 
                 if (boletoCompleto >=1) {
-                    listadoProductos.push(boletoCompleto + 'Pases Completos');
+                    listadoProductos.push(boletoCompleto + ' Pases Completos');
                 }
 
                 if (cantCamisas >=1) {
-                    listadoProductos.push(cantCamisas + 'Camisas');
+                    listadoProductos.push(cantCamisas + ' Camisas');
                 }
 
                 if (cantEtiquetas >=1) {
-                    listadoProductos.push(cantEtiquetas + 'Etiquetas');
+                    listadoProductos.push(cantEtiquetas + ' Etiquetas');
                 }
                
+                lista_productos.style.display = "block"
                 lista_productos.innerHTML = '';
                 for (let i = 0; i < listadoProductos.length; i++) {
-                    lista_productos.innerHTML += listadoProductos[i] + '<br/>';
-                    
+                    lista_productos.innerHTML += listadoProductos[i] + '<br/>';                    
                 }
+
+                suma.innerHTML = "$ " + totalPagar.toFixed(2);
+
 
             }           
         }
