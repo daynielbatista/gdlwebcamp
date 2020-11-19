@@ -72,6 +72,8 @@
                 suma.innerHTML = "$ " + totalPagar.toFixed(2);
 
 
+                  
+
                 
             }           
         }
