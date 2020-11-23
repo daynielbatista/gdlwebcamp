@@ -3,6 +3,20 @@
 
     var regalo = document.getElementById('regalo');
     document.addEventListener('DOMContentLoaded', function(){
+
+        /***Esto entra en conflicto con la Validacion de nombre, apellido e email - arreglarlo***/
+        var map = L.map('mapa').setView([51.505, -0.09], 16);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        L.marker([51.5, -0.09]).addTo(map)
+        .bindPopup('GDLWebCamp 2020<br> Tickets available.')
+        .openPopup()
+        .bindTooltip('Un Tooltip')
+        .openTooltip();
+
         //Campos datos usuario  //console.log("listo");
         var nombre = document.getElementById('nombre');
         var apellido = document.getElementById('apellido');
@@ -30,14 +44,34 @@
         pase_dosdias.addEventListener('blur', mostrarDias);
         pase_completo.addEventListener('blur', mostrarDias);
 
-        nombre.addEventListener('blur', function(){
+        nombre.addEventListener('blur', validarCampos);
+        apellido.addEventListener('blur', validarCampos);
+        email.addEventListener('blur', validarCampos);
+        email.addEventListener('blur', validarMail);
+
+        function validarCampos() {
             if (this.value =='') {
                 errorDiv.style.display = 'block';
                 errorDiv.innerHTML = "Este campo es obligatorio";
                 this.style.border = '1px solid red'
                 errorDiv.style.border = '1px solid red';
+            } else {
+                errorDiv.style.display = 'none';
+                this.style.border = '1px solid #cccccc';
             }
-        });
+        }
+
+        function validarMail() {
+            if (this.value.indexOf("@") > -1) {
+                errorDiv.style.display = 'none';
+                this.style.border = '1px solid #cccccc';
+            } else {
+                errorDiv.style.display = 'block';
+                errorDiv.innerHTML = "Debe tene al menos una @";
+                this.style.border = '1px solid red'
+                errorDiv.style.border = '1px solid red';
+            }
+        }
 
 
         function calcularMontos(event) {
