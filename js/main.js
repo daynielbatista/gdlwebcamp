@@ -5,7 +5,7 @@
     document.addEventListener('DOMContentLoaded', function(){
 
         /***Esto entra en conflicto con la Validacion de nombre, apellido e email - arreglarlo***/
-        var map = L.map('mapa').setView([51.505, -0.09], 16);
+       /* var map = L.map('mapa').setView([51.505, -0.09], 16);
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -15,7 +15,7 @@
         .bindPopup('GDLWebCamp 2020<br> Tickets available.')
         .openPopup()
         .bindTooltip('Un Tooltip')
-        .openTooltip();
+        .openTooltip();*/
 
         //Campos datos usuario  //console.log("listo");
         var nombre = document.getElementById('nombre');
